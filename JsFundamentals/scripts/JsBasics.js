@@ -13,3 +13,5 @@ console.log("Total of t-shirt order is ", cost);
 
 const remainingMoney = 100 - 20 - 50 + 200;
 console.log("My money balance is ", remainingMoney);
+
+document.body.innerHTML = "";
