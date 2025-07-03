@@ -1,5 +1,5 @@
 export function jsbasic() {
-  alert("Hello");
+  // alert("Hello");
 }
 
 const sum = 2 + 2;
