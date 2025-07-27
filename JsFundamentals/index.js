@@ -1,7 +1,20 @@
 import { jsbasic } from "./scripts/JsBasics.js";
 import { numbersMath } from "./scripts/NumbersAndMath.js";
 import { string } from "./scripts/Strings.js";
+import { HTMLCSSReview } from "./scripts/HTMLCSSReview.js";
+import { variables } from "./scripts/Variables.js";
+import { BooleansAndIfStatements } from "./scripts/BooleansAndIfStatements.js";
+import { Functions } from "./scripts/Functions.js";
+import { string } from "./scripts/Objects.js";
+import { DOM } from "./scripts/DOM.js";
+import { htmlCss } from "./scripts/HtlmlCssJs.js";
 
 jsbasic();
 numbersMath();
 string();
+HTMLCSSReview();
+variables();
+BooleansAndIfStatements();
+Functions();
+DOM();
+htmlCss();
