@@ -19,6 +19,14 @@ export function string() {
   const num = "$" + (2095 + 799) / 100;
   console.log(num);
 
+  const num2 = "Item (" + (1 + 1) + "):  $" + (2095 + 799) / 100; // Concatenation
+  console.log(num2);
+
+  const num3 = `Item (${1 + 1}):  $${(2095 + 799) / 100}`; // Interpolation
+  console.log(num3);
+
+  // Interpolation - Insert a value durectly into a string
+
   console.log(
     "--------------------String Fundamentals---------------------------------"
   );
