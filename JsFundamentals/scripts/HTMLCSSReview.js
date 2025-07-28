@@ -1,3 +1,3 @@
-export function htmlcssReview() {
+export function htmlCssReview() {
   const htmlCssReview = "";
 }

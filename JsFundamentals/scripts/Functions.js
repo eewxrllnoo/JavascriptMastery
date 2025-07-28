@@ -1,1 +1,1 @@
-export function func_Tion() {}
+export function function_() {}

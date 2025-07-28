@@ -1,21 +1,21 @@
 import { jsbasic } from "./scripts/JsBasics.js";
 import { numbersMath } from "./scripts/NumbersAndMath.js";
 import { string } from "./scripts/Strings.js";
-import { htmlcssReview } from "./scripts/HTMLCSSReview.js";
+import { htmlCssReview } from "./scripts/HtmlCssReview.js";
 import { variaBles } from "./scripts/Variables.js";
 import { booleansAndIfStatements } from "./scripts/BooleansAndIfStatements.js";
-import { func_Tion } from "./scripts/Functions.js";
+import { function_ } from "./scripts/Functions.js";
 import { obJects } from "./scripts/Objects.js";
 import { dom } from "./scripts/DOM.js";
-import { htmlCss } from "./scripts/htmlcss_js.js";
+import { htmlCssJs } from "./scripts/HtmlCssJs.js";
 
 jsbasic();
 numbersMath();
 string();
-htmlcssReview();
+htmlCssReview();
 variaBles();
 booleansAndIfStatements();
-func_Tion();
+function_();
 obJects();
 dom();
-htmlCss();
+htmlCssJs();
