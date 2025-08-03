@@ -6,11 +6,19 @@
     <title>Cart Quantity</title>
   </head>
   <body>
-    <button>Show Quantity</button>
-    <button>Add to cart</button>
+    <button onclick="console.log(`Cart Quantity: ${cartQuantity}`)">
+      Show Quantity
+    </button>
+    <button
+      onclick=" cartQuantity++; console.log(`Cart Quantity: ${cartQuantity}`)"
+    >
+      Add to cart
+    </button>
     <button>+2</button>
     <button>+3</button>
     <button>Reset Cart</button>
-    <script></script>
+    <script>
+      let cartQuantity = 0;
+    </script>
   </body>
 </html>
