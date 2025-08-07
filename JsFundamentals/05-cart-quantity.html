@@ -14,9 +14,17 @@
     >
       Add to cart
     </button>
-    <button>+2</button>
-    <button>+3</button>
-    <button>Reset Cart</button>
+    <button
+      onclick=" cartQuantity = cartQuantity + 2 ; console.log(`Cart Quantity: ${cartQuantity}`)"
+    >
+      +2
+    </button>
+    <button
+      onclick=" cartQuantity = cartQuantity + 3 ; console.log(`Cart Quantity: ${cartQuantity}`)"
+    >
+      +3
+    </button>
+    <button onclick=" cartQuantity = 0">Reset Cart</button>
     <script>
       let cartQuantity = 0;
     </script>
