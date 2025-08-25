@@ -7,6 +7,7 @@
   </head>
   <body>
     <script>
+      /*
       console.log(3 < 5);
       console.log(5 === "5.00");
 
@@ -34,6 +35,38 @@
       } else {
         console.log("You cannot drive");
       }
+      */
+
+      // Basics of AND, OR, NOT
+      console.log("Basic Operations:");
+      console.log(true && true); // true
+      console.log(true && false); // false
+      console.log(false || true); // true
+      console.log(false || false); // false
+      console.log(!true); // false
+      console.log(!false); // true
+
+      // Using actual comparisons
+      console.log("\nWith Comparisons:");
+      console.log(3 < 5 && 5 > 2); // true
+      console.log(3 < 5 || 5 > 2); // true
+      console.log(!(3 < 5)); // false
+      console.log(!(3 > 5)); // true
+
+      // One complex example is sufficient to demonstrate the concept
+      console.log("\nComplex Example:");
+      console.log((3 < 5 && 5 > 2) || !(3 > 5)); // true
+
+      // If you want to test different FALSE conditions, use variables to avoid repetition
+      console.log("\nUsing Variables for Clarity:");
+      let a = 3 < 5; // true
+      let b = 5 > 2; // true
+      let c = 3 > 5; // false
+      let d = 5 < 2; // false
+
+      console.log((a && b) || (!a && !b)); // (T&&T) || (F&&F) -> T || F -> true
+      console.log((a && b) || (!c && !d)); // (T&&T) || (T&&T) -> T || T -> true
+      console.log((a && b) || (!a && !d)); // (T&&T) || (F&&T) -> T || F -> true
     </script>
   </body>
 </html>
