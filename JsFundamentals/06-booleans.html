@@ -73,6 +73,20 @@
       // Ternary Operator
       const result = true ? "truthy" : "falsey";
       console.log(result); // Output: truthy
+
+      // Falsy values in JavaScript
+      const falsyValues = [false, 0, "", null, undefined, NaN];
+      falsyValues.forEach((value) => {
+        if (value) {
+          console.log(`${value} is truthy`);
+        } else {
+          console.log(`${value} is falsy`);
+        }
+      });
+      // Everything else is truthy
+      console.log("Hello" ? "truthy" : "falsey"); // Output: truthy
+      console.log(42 ? "truthy" : "falsey"); // Output: truthy
+      console.log([] ? "truthy" : "falsey"); // Output: truthy
     </script>
   </body>
 </html>
