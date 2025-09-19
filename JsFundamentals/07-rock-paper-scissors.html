@@ -52,7 +52,7 @@
     <button
       onclick="
       
-      pickComputerMove();
+      console.log(pickComputerMove());
 
     let result3 = '';
     
@@ -83,6 +83,8 @@
         } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
           computerMove = "Scissors";
         }
+
+        return "rock";
       }
     </script>
   </body>
