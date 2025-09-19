@@ -10,7 +10,7 @@
     <button
       onclick="
       
-    pickComputerMove();
+    const computerMove = pickComputerMove();
 
     let result = '';
     
@@ -31,7 +31,7 @@
     <button
       onclick="
 
-      pickComputerMove();
+      const computerMove = pickComputerMove();
 
     let result2 = '';
     
@@ -70,6 +70,7 @@
     >
       Scissors
     </button>
+
     <script>
       function pickComputerMove() {
         const randomNumber = Math.random();
