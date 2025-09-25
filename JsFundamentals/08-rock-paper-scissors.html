@@ -10,6 +10,9 @@
     <button onclick=" playGame('rock') ">Rock</button>
     <button onclick=" playGame('paper') ">Paper</button>
     <button onclick=" playGame('scissors') ">Scissors</button>
+    <button onclick="score.wins = 0, score.loses = 0, score.ties = 0">
+      Reset Buttons
+    </button>
 
     <script>
       const score = {
@@ -49,8 +52,17 @@
           }
         }
 
+        if (result === "You win!") {
+          score.wins += 1;
+        } else if (result === "You lose!") {
+          score.loses += 1;
+        } else if (result === "It's a tie!") {
+          score.ties += 1;
+        }
+
         alert(
-          `You picked ${playerMove}. Computer picked ${computerMove}. ${result}`
+          `You picked ${playerMove}. Computer picked ${computerMove}. ${result}
+Score: ${score.wins} wins, ${score.loses} losses, ${score.ties} ties.`
         );
       }
 
