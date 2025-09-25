@@ -12,6 +12,17 @@
         price: 1089,
       };
       console.log(product);
+      console.log(product.name);
+      console.log(product.price); // Dot notation
+
+      product.name = "cotton socks";
+      console.log(product);
+
+      product.newProperty = "true";
+      console.log(product);
+
+      delete product.newProperty; // Delete a property
+      console.log(product);
     </script>
   </body>
 </html>
