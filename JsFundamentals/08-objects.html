@@ -28,10 +28,22 @@
 
       const product2 = {
         name: "shirts",
+        "delivery-time": "2 weeks",
+        rating: {
+          stars: 4.5,
+          reviews: 120,
+        },
+        fun: function function1() {
+          console.log("This is a function inside an object");
+        },
       };
       console.log(product2);
       console.log(product2.name);
       console.log(product2["name"]); // Bracket notation
+      console.log(product2["delivery-time"]);
+
+      console.log(product2.rating.reviews);
+      product2.fun(); // Call the function inside the object
     </script>
   </body>
 </html>
