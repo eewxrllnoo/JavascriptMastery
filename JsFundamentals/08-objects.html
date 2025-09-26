@@ -48,6 +48,10 @@
       console.log(typeof console.log);
 
       console.log(JSON.stringify(product2)); // Convert object to JSON string
+
+      const jsonString = JSON.stringify(product2);
+      JSON.parse(jsonString); // Convert JSON string back to object
+      console.log(JSON.parse(jsonString));
     </script>
   </body>
 </html>
