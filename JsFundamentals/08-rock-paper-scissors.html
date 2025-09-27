@@ -10,13 +10,26 @@
     <button onclick=" playGame('rock') ">Rock</button>
     <button onclick=" playGame('paper') ">Paper</button>
     <button onclick=" playGame('scissors') ">Scissors</button>
-    <button onclick="score.wins = 0, score.loses = 0, score.ties = 0">
+    <button
+      onclick="
+    score.wins = 0; 
+    score.loses = 0; 
+    score.ties = 0;
+    localStorage.removeItem('score');"
+    >
       Reset Buttons
     </button>
 
     <script>
-      const score = JSON.parse(localStorage.getItem("score"));
+      let score = JSON.parse(localStorage.getItem("score"));
       // console.log(JSON.parse(localStorage.getItem("score")));
+      if (!score) {
+        score = {
+          wins: 0,
+          loses: 0,
+          ties: 0,
+        };
+      }
 
       function playGame(playerMove) {
         const computerMove = pickComputerMove();
