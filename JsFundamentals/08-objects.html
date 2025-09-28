@@ -56,6 +56,33 @@
       */
       console.log("Hello".length);
       console.log("Hello".toUpperCase());
+
+      const object1 = {
+        message: "Hello",
+      };
+
+      const object2 = object1;
+      console.log(object1);
+      console.log(object2);
+
+      object1.message = "Good job!";
+      console.log(object1);
+
+      const object3 = {
+        message: "Good job!",
+      };
+
+      console.log(object3 === object1);
+
+      const object4 = {
+        message: "Good job!",
+        price: 799,
+      };
+
+      // const message = object4.message;
+      const { message, price } = object4; // Destructuring
+      console.log(message);
+      console.log(price);
     </script>
   </body>
 </html>
