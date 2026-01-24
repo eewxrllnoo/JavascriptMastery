@@ -1,6 +1,6 @@
 export function variaBles() {
   // Variables in JavaScript
-  let name = "John"; // String variable
+  let name = "John II"; // String variable
   let age = 30; // Number variable
   let isStudent = true; // Boolean variable
 
