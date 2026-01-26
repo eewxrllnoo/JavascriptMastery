@@ -12,8 +12,6 @@ export function variaBles() {
   age = 31;
   console.log("Updated Age:", age);
 
-  age = 35
-    console.log("Updated Age Again:", age);
 
   // Constants
   const pi = 3.14;
