@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,35 +7,34 @@
   </head>
   <body>
     <script>
-      /*
-            console.log(3 < 5);
-            console.log(5 === "5.00");
+      console.log(3 < 5);
+      console.log(5 === '5.00');
 
-            // Comparison Operators
-            // <, >, <=, >=, ==, ===, !=, !==
+      // Comparison Operators
+      // <, >, <=, >=, ==, ===, !=, !==
 
-            //Order of Operations
-            // 1. Parentheses ()
-            // 2. Exponents
-            // 3. Multiplication and Division
-            // 4. Addition and Subtraction
-            // 5. Comparison Operators
-            // 6. Logical Operators (AND, OR, NOT)
+      //Order of Operations
+      // 1. Parentheses ()
+      // 2. Exponents
+      // 3. Multiplication and Division
+      // 4. Addition and Subtraction
+      // 5. Comparison Operators
+      // 6. Logical Operators (AND, OR, NOT)
 
-            if (3 < 5) {
-              console.log("3 is less than 5");
-            } else {
-              console.log("3 is not less than 5");
-            }
+      if (3 < 5) {
+        console.log('3 is less than 5');
+      } else {
+        console.log('3 is not less than 5');
+      }
 
-            if (25 >= 26) {
-              console.log("You can drive");
-            } else if (15 >= 14) {
-              console.log("Almost there, keep learning!");
-            } else {
-              console.log("You cannot drive");
-            }
-            */
+      if (25 >= 26) {
+        console.log('You can drive');
+      } else if (15 >= 14) {
+        console.log('Almost there, keep learning!');
+      } else {
+        console.log('You cannot drive');
+      }
+
       /*
             // Basics of AND, OR, NOT
             console.log("Basic Operations:");
@@ -71,11 +70,11 @@
             */
 
       // Ternary Operator
-      const result = true ? "truthy" : "falsey";
+      const result = true ? 'truthy' : 'falsey';
       console.log(result); // Output: truthy
 
       // Falsy values in JavaScript
-      const falsyValues = [false, 0, "", null, undefined, NaN];
+      const falsyValues = [false, 0, '', null, undefined, NaN];
       falsyValues.forEach((value) => {
         if (value) {
           console.log(`${value} is truthy`);
@@ -84,9 +83,9 @@
         }
       });
       // Everything else is truthy
-      console.log("Hello" ? "truthy" : "falsey"); // Output: truthy
-      console.log(42 ? "truthy" : "falsey"); // Output: truthy
-      console.log([] ? "truthy" : "falsey"); // Output: truthy
+      console.log('Hello' ? 'truthy' : 'falsey'); // Output: truthy
+      console.log(42 ? 'truthy' : 'falsey'); // Output: truthy
+      console.log([] ? 'truthy' : 'falsey'); // Output: truthy
     </script>
   </body>
 </html>
