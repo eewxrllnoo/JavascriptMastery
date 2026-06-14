@@ -80,13 +80,30 @@
       const object4 = {
         message: "Good job!",
         price: 799,
+        product: "Shirt",
       };
 
       // const message = object4.message;
-      const { message, price } = object4; // Destructuring
+      const { message, price, product } = object4; // Destructuring - short cuts
 
-      // console.log(message);
-      // console.log(price);
+      console.log(message);
+      console.log(price);
+      console.log(product);
+
+      const object5 = {
+        // message: message,
+        message, // shorthand property - shortcut syntax
+        // method: function function1() {
+        //   console.log("This is a method");
+        // },
+        method() {
+          console.log("This is a method"); // shorthand method - shortcut syntax
+        },
+      };
+
+      console.log(object5);
+      object5.method();
+
     </script>
   </body>
 </html>
