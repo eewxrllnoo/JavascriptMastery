@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Projects</title>
+  </head>
+  <body>
+    <p>Youtube Subcribe Button</p>
+    <button class="js-subscribe-btn">Subscribe</button>
+     <script>
+    document.querySelector('.js-subscribe-btn').addEventListener('click', function() {
+      this.innerHTML = 'Subscribed';
+    });
+     </script>
+  </body>
+</html>
