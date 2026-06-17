@@ -7,7 +7,28 @@
   </head>
   <body>
    <button> Hello </button>
-     <script>
+   <button class = "js-button"> 2nd Button </button>
+
+  <script>
+
+    console.log(document.querySelector('button').innerHTML);
+    document.querySelector('button').innerHTML = 'Good Job!';
+
+      const buttonElement = document.querySelector('.js-button');
+      console.log(buttonElement);
+   
+    
+/*
+  console.log(document.title);
+  document.title = 'Changed';
+
+  console.log(document.body);
+  console.log(typeof document.body);
+
+  console.log(document.body.innerHTML);
+  document.body.innerHTML = "<button> Good Job! </button>";
+*/
+
 /*
       document.body.innerHTML = "<h1> Hello World </h1>";
       document.title = 'Good job!';
