@@ -7,11 +7,23 @@
   </head>
   <body>
     <p>Youtube Subcribe Button</p>
-    <button class="js-subscribe-btn">Subscribe</button>
+    <button onclick=" 
+     subscribe();
+    " class="js-subscribe-btn">Subscribe</button>
+
      <script>
-    document.querySelector('.js-subscribe-btn').addEventListener('click', function() {
-      this.innerHTML = 'Subscribed';
-    });
+      
+       function subscribe(){
+        const buttonElement = document.querySelector('.js-subscribe-btn');
+    
+        if(buttonElement.innerHTML === 'Subscribe'){
+          buttonElement.innerHTML = 'Subscribed';
+        }
+        else {
+          buttonElement.innerHTML = 'Subscribe';
+        }
+          }
+     
      </script>
   </body>
 </html>
